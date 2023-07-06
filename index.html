@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hans's E-Groceries</title>
+    
+    <link rel="shotcut icon" href="assets/tomatto.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/anim.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script
+      src="https://kit.fontawesome.com/12cc5318b7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <a href="#">
+        <figure class="logo">
+          <img src="assets/logo.png" alt="logo" />
+        </figure>
+      </a>
+      <ul class="list-nav" id="myTopnav">
+        <a href="#top-section"><li class="nav-item1">Home</li></a>
+        <a href="#mid-section"><li class="nav-item2">Our Package</li></a>
+        <a href="#bot-section"><li class="nav-item3">Call Us</li></a>
+
+        <a href="#top-section" class="ham-item fade-in" onclick="hamburger()">
+          <i class="fa-solid fa-home"></i>
+        </a>
+        <a href="#mid-section" class="ham-item fade-in" onclick="hamburger()">
+          <i class="fa-solid fa-cubes"></i>
+        </a>
+        <a href="#bot-section" class="ham-item fade-in" onclick="hamburger()">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+
+        <a href="javascript:void(0);" class="ham" onclick="hamburger()">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </ul>
+    </nav>
+
+    <section id="top-section" class="top-section">
+      <header>
+        <h1>Top Rated E-Groceries Shop in<br />Indonesian</h1>
+        <h2>Every Day with best ingredients</h2>
+      </header>
+
+      <div class="main-content">
+        <div class="rating">
+          <figure id="sliderOne">
+            <img
+              src="assets/product/product1.jpg"
+              alt="gambar placeholder produk"
+              class="fade-io"
+            />
+            <figcaption class="fade-io">
+              "setiap hari beli sayur buah yang fresh disini"
+            </figcaption>
+          </figure>
+
+          <div id="sliderTwo" class="user-card slider">
+            <figure class="user-picture">
+              <img
+                src="assets/profile/profile1.png"
+                alt="gambar placeholder user"
+              />
+            </figure>
+
+            <div class="user-info">
+              <h4 class="user-name">Pavel Durov</h4>
+              <p class="profesi">Pendiri Telegram, 38</p>
+            </div>
+          </div>
+
+          <div class="informations">
+            <h4 class="information-head">
+              Building on the success of our headline, we would like to share
+              with you the remarkable benefits of our service and why it's the
+              perfect choice for busy individuals like yourself
+            </h4>
+
+            <div class="list-info">
+              <div class="list-item">
+                <figure class="ordered">
+                  <img src="assets/elm/1.svg" alt="urut 1" />
+                </figure>
+                <p>
+                  We ensure that you receive only the freshest and
+                  highest-quality produce through rigorous quality checks.
+                </p>
+              </div>
+
+              <div class="list-item">
+                <figure class="ordered">
+                  <img src="assets/elm/2.svg" alt="urut 2" />
+                </figure>
+                <p>
+                  Save time by skipping the trips to the grocery store and have
+                  your fresh produce delivered directly to your doorstep.
+                </p>
+              </div>
+
+              <div class="list-item">
+                <figure class="ordered">
+                  <img src="assets/elm/3.svg" alt="urut 3" />
+                </figure>
+                <p>
+                  We prioritize sustainable practices, minimizing packaging and
+                  implementing efficient delivery routes for a greener future.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="formulir">
+          <header>
+            <h3><b>Contact Us</b></h3>
+            <p>
+              Sales akan menghubungi anda 1x24<br />Jam setelah data kami terima
+            </p>
+          </header>
+
+          <form name="contactUs">
+            <label for="firstName">Your Name:</label>
+            <input
+              type="text"
+              name="fullName"
+              id="fullName"
+              class="inputan"
+              placeholder="First and last name"
+            />
+
+            <label for="email">Email Address:</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="inputan"
+              placeholder="example@email.com"
+            />
+
+            <label for="phone">Phone Number:</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              class="inputan"
+              placeholder="0818 2xxx xxxx"
+            />
+
+            <label for="message">Message:</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Some messages"
+              class="inputan"
+            ></textarea>
+
+            <label for="interest">What are you interested in?</label>
+            <select name="interest" id="interest" class="inputan">
+              <option value="" disabled selected hidden>Select option</option>
+              <option value="buah">Buah</option>
+              <option value="sayur">Sayur</option>
+              <option value="umbi">Umbi</option>
+              <option value="kacang">Kacang</option>
+              <option value="bawang">Bawang</option>
+            </select>
+
+            <button type="button" onclick="validateForm()">SEND</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="mid-section" class="mid-section">
+      <header class="mid-header">
+        <h1>Our Package</h1>
+      </header>
+
+      <div class="main-content">
+        <div class="pros-card">
+          <div class="pros-detail">
+            <figure class="pros-picture">
+              <img src="assets/elm/pros.svg" alt="pros" />
+            </figure>
+            <h3 class="pros-title">Fresh Vegetable</h3>
+          </div>
+
+          <div class="pros-detail">
+            <div class="pros-picture"></div>
+            <p class="pros-description">
+              Sayuran segar langsung dari sumber pertanian terbaik
+            </p>
+          </div>
+        </div>
+
+        <div class="pros-card">
+          <div class="pros-detail">
+            <figure class="pros-picture">
+              <img src="assets/elm/pros.svg" alt="pros" />
+            </figure>
+            <h3 class="pros-title">Fresh Fruit</h3>
+          </div>
+
+          <div class="pros-detail">
+            <div class="pros-picture"></div>
+            <p class="pros-description">
+              Buah dengan kualitas terbaik dari local atau import dan harga yang
+              terbaik
+            </p>
+          </div>
+        </div>
+
+        <div class="pros-card">
+          <div class="pros-detail">
+            <figure class="pros-picture">
+              <img src="assets/elm/pros.svg" alt="pros" />
+            </figure>
+            <h3 class="pros-title">Instant Delivery</h3>
+          </div>
+
+          <div class="pros-detail">
+            <div class="pros-picture"></div>
+            <p class="pros-description">
+              Di kirim instan oleh kurir yang telah di training dengan SOP untuk
+              menjaga kondisi belanja kamu
+            </p>
+          </div>
+        </div>
+
+        <div class="pros-card">
+          <div class="pros-detail">
+            <figure class="pros-picture">
+              <img src="assets/elm/star.svg" alt="star" />
+            </figure>
+            <h3 class="pros-title">Kitchen Ingredient</h3>
+          </div>
+
+          <div class="pros-detail">
+            <div class="pros-picture"></div>
+            <p class="pros-description">
+              Bumbu dapur lengkap untuk keperluan memasak kamu
+            </p>
+          </div>
+        </div>
+
+        <div class="pros-card">
+          <div class="pros-detail">
+            <figure class="pros-picture">
+              <img src="assets/elm/star.svg" alt="star" />
+            </figure>
+            <h3 class="pros-title">Kitchen Set</h3>
+          </div>
+
+          <div class="pros-detail">
+            <div class="pros-picture"></div>
+            <p class="pros-description">
+              Segala jenis alat masak untuk membantu kamu memasak
+            </p>
+          </div>
+        </div>
+
+        <div class="pros-card">
+          <div class="pros-detail">
+            <figure class="pros-picture">
+              <img src="assets/elm/star.svg" alt="star" />
+            </figure>
+            <h3 class="pros-title">Bunding Set</h3>
+          </div>
+
+          <div class="pros-detail">
+            <div class="pros-picture"></div>
+            <p class="pros-description">
+              Bingung masak apa? Sudah tersedia paket untuk kamu masak di
+              dapurmu
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="bot-section" class="bot-section">
+      <header>
+        <h1>Freshness Delivered to Your Doorstep</h1>
+        <p>
+          We hope this message finds you in great health and high spirits. We
+          are thrilled to introduce you to our innovative Fruit and Vegetable
+          E-Grocery, a one-stop online destination for all your fresh produce
+          needs.
+        </p>
+      </header>
+
+      <div class="call-btn">
+        <a
+          href="https://www.instagram.com/hansadriian"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button>PESAN SEKARANG JUGA</button>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <figure class="logo">
+        <img src="assets/logo.png" alt="logo" />
+      </figure>
+
+      <p>Terms of Service &nbsp; Privacy Policy</p>
+      <p>&#169; 2023 &nbsp; Hans</p>
+    </footer>
+  </body>
+
+  <script src="js/script.js"></script>
+</html>

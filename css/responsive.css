@@ -1,0 +1,60 @@
+@media only screen and (max-width: 400px) {
+    .formulir p {
+        font-size: 0.8em;
+    }
+
+    .inputan {
+        margin: 0.5vh 0 2vh 0;
+    }
+
+    .pros-card {
+        padding: 1em 1em 1em 1em;
+        width: 90%;
+    }
+
+    .pros-title {
+        font-size: 1.2em;
+        margin: 0 0 3% 0;
+    }
+
+    .pros-description {
+        font-size: 0.7em;
+    }
+
+    .bot-section button {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ham-item {
+        padding-right: 4vw;
+    }
+
+    .list-nav a:not(.ham) {
+        display: none;
+    }
+
+    .list-nav a.ham {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-section .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .list-item p {
+        width: 100%;
+    }
+
+    .pros-card {
+        padding: 1.5em 1em 2.5em 1em;
+        width: 90%;
+    }
+
+    .bot-section button {
+        font-size: 2vw;
+    }
+}

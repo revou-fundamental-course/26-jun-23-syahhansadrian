@@ -1,0 +1,33 @@
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+@keyframes fade-in {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.fade-io {
+    animation-name: fade-io;
+    animation-duration: 4.1s;
+}
+
+@keyframes fade-io {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    20%,
+    80% {
+        opacity: 1
+    }
+}
