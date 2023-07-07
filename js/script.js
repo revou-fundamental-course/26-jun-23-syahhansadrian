@@ -2,16 +2,16 @@ var sliderOne = document.getElementById('sliderOne');
 
 var slides = ['product2.jpg', 'product3.jpg', 'product4.jpg', 'product1.jpg'];
 var quotes = [
-    "sayuran segar dan bebas pestisida",
-    "buah-buahan terbaik dengan cita rasa terbaik",
-    "produk lokal terbaik dengan harga yang terbaik",
-    "setiap hari beli sayur buah yang fresh di sini"
+    "Baru saja mendapatkan sayuran segar dari websitemu dan wah, wortel dan paprika ini begitu kuatnya hingga bisa melumpuhkan penjahat hanya dengan satu gigitan! 💪🥕🌶️",
+    "buah-buahan terbaik dengan cita rasa terbaik, langsung tiba di pintu rumah saya 🕺🏻🎁🚪",
+    "Who needs rockets when you can have rocket lettuce? Just bought some fresh greens from your website. Gotta say, they're out of this world! 🚀🥬",
+    "From coding to kale, I'm expanding my skills! Just ordered some veggies from your website, and I must say, they're as crisp and refreshing as a well-optimized algorithm. Keep up the great work! 💻🥦 "
 ];
 
 var sliderTwo = document.getElementById('sliderTwo');
 
-var names = ['Sifujeson', 'Ilham Anugrah', 'Elon Musk', 'Pavel Durov'];
-var profesi = ['Praktisi Krav Maga, -', 'Pelajar, 18', 'Pendisi Space-X, 52', 'Pendiri Telegram, 38'];
+var names = ['Sifujeson', 'Ilham Nugraha', 'Elon Musk', 'Pavel Durov'];
+var profesi = ['Praktisi Krav Maga, -', 'Pelajar, 18', 'Pendiri Space-X, 52', 'Pendiri Telegram, 38'];
 var profile_pic = ['profile2.png', 'profile3.png', 'profile4.png', 'profile1.png']
 
 var idx = 0;
