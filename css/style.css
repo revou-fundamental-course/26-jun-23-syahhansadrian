@@ -24,8 +24,13 @@ nav {
 }
 
 .logo {
-    width: 120px;
+    width: 100px;
     padding-top: 2vh;
+}
+
+nav > a > figure.logo img {
+    width: 50%;
+    height:50%;
 }
 
 .list-nav {
@@ -308,9 +313,9 @@ button {
     padding: 0 1.5vw 0 0;
 }
 
-.pros-picture img {
-    border-radius: 50px;
-}
+/* .pros-picture img {
+    border-radius: 0px;
+} */
 
 .pros-detail {
     padding: 0 0 0 0;
@@ -330,7 +335,7 @@ button {
 
 .pros-description {
     font-weight: light;
-    color: #7A8DA2;
+    color: #768851;
     font-size: 1.1em;
     margin: 0;
     padding: 0;
@@ -377,6 +382,10 @@ footer {
 }
 
 footer .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
     padding: 0;
 }
 
